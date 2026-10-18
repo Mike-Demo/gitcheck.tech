@@ -1,0 +1,208 @@
+{
+  "boltSlidesVersion": 1,
+  "boltSlidesId": "11011050-f9d6-4d43-8a9e-3e43af51bbaf",
+  "deck": {
+    "title": "GitCheck — know your license chain",
+    "transition": "fade",
+    "font": "space",
+    "accent": "#a78bfa"
+  },
+  "slides": [
+    {
+      "id": "s1",
+      "position": 0,
+      "layout": "cover",
+      "props": {
+        "kicker": "Open-source license compatibility scanner",
+        "title": "==GitCheck==\nKnow your license chain before it knows you.",
+        "subtitle": "Paste a repo URL. Get the full dependency license map — and every conflict — in seconds.",
+        "foot": "gitcheck.tech · github.com/Mike-Demo/gitcheck.tech"
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "Open with the hook: most teams ship licenses they've never read. GitCheck reads them all, automatically.",
+      "status": "none"
+    },
+    {
+      "id": "s2",
+      "position": 1,
+      "layout": "statement",
+      "props": {
+        "kicker": "The problem",
+        "title": "Every dependency ==drags in a license== — and some conflict.",
+        "body": "Copyleft meets proprietary, MIT meets GPL, terms collide upstream-vs-upstream. Teams find out late: at review, at acquisition, or after launch."
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "A single transitive dependency can change your obligations. Nobody reads the whole tree by hand — that's the gap.",
+      "status": "none"
+    },
+    {
+      "id": "s3",
+      "position": 2,
+      "layout": "bento",
+      "props": {
+        "kicker": "What it does",
+        "title": "One URL in. ==The whole chain, mapped.==",
+        "tiles": [
+          {
+            "title": "Works where you host",
+            "body": "Paste a public GitHub, GitLab or Bitbucket repo URL — no setup.",
+            "c": 3,
+            "variant": "accent"
+          },
+          {
+            "title": "Full enumeration",
+            "body": "Walks every dependency and surfaces its license.",
+            "c": 3
+          },
+          {
+            "title": "Compatibility check",
+            "body": "Tests licenses upstream-vs-upstream and against your project's own license.",
+            "c": 2
+          },
+          {
+            "title": "Chain map",
+            "body": "Visualizes the entire dependency license graph.",
+            "c": 2
+          },
+          {
+            "title": "Risk highlights",
+            "body": "Flags conflicts and risky terms before they ship.",
+            "c": 2,
+            "variant": "glow"
+          }
+        ]
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "Demo moment if live: paste a repo URL and let the scan run. Emphasize it checks both directions — dependency-on-dependency, not just against your license.",
+      "status": "none"
+    },
+    {
+      "id": "s4",
+      "position": 3,
+      "layout": "steps",
+      "props": {
+        "kicker": "How it works",
+        "title": "From repo URL to ==risk report==.",
+        "items": [
+          { "title": "Repo scan", "body": "Clone the public repository from GitHub, GitLab or Bitbucket." },
+          { "title": "Dependency resolution", "body": "Enumerate the full dependency tree." },
+          { "title": "SPDX identification", "body": "Match each license to its SPDX identifier." },
+          { "title": "Compatibility matrix", "body": "Score every license pair in the chain." },
+          { "title": "Risk report", "body": "Surface conflicts with clear, actionable output." }
+        ]
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "Five deterministic stages — no heuristics hand-waving. SPDX identifiers keep the results auditable.",
+      "status": "none"
+    },
+    {
+      "id": "s5",
+      "position": 4,
+      "layout": "contrast",
+      "props": {
+        "kicker": "Why it matters",
+        "title": "Relicensing ==surprises== are real.",
+        "left": {
+          "label": "Unchecked",
+          "title": "A dependency changes its terms",
+          "points": [
+            "New version ships under a different license",
+            "Your project inherits obligations overnight",
+            "Forced rewrites — or legal exposure"
+          ]
+        },
+        "right": {
+          "label": "With GitCheck",
+          "title": "You see it before you merge",
+          "points": [
+            "Every license in the chain, identified via SPDX",
+            "Conflicts flagged against your own license",
+            "Know the risk before it becomes yours"
+          ]
+        }
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "High-profile relicensings have forced rewrites across the industry. The cost of checking is minutes; the cost of missing it is a rewrite or counsel.",
+      "status": "none"
+    },
+    {
+      "id": "s6",
+      "position": 5,
+      "layout": "pillars",
+      "props": {
+        "title": "Key features.",
+        "items": [
+          { "title": "Multi-forge", "body": "GitHub, GitLab and Bitbucket public repos — one input format." },
+          { "title": "Full-chain mapping", "body": "The complete license graph, not just direct dependencies." },
+          { "title": "SPDX-accurate", "body": "Standard identifiers, so findings are verifiable." },
+          { "title": "Bidirectional checks", "body": "Upstream-vs-upstream and against your project's license." },
+          { "title": "Risk-first output", "body": "Conflicts and warnings highlighted, not buried." },
+          { "title": "Open source", "body": "Inspect it, self-host it, contribute to it." }
+        ]
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "Don't read all six — call out multi-forge support and open source, then move on.",
+      "status": "none"
+    },
+    {
+      "id": "s7",
+      "position": 6,
+      "layout": "statGrid",
+      "props": {
+        "kicker": "Status",
+        "title": "Built in a weekend. ==Scanning live.==",
+        "stats": [
+          { "value": "48h", "label": "Bolt Forge weekend", "caption": "Oct 17–18, 2026, on GLM 5.3 Flash" },
+          { "value": "3", "label": "Platforms verified", "caption": "GitHub, GitLab and Bitbucket scans" },
+          { "value": "100%", "label": "Open source", "caption": "Code and license data in the open" }
+        ]
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "Live scanning is verified across all three forges — this isn't a mock. Shipped end-to-end during the Bolt Forge weekend.",
+      "status": "none"
+    },
+    {
+      "id": "s8",
+      "position": 7,
+      "layout": "cover",
+      "props": {
+        "kicker": "Try it now",
+        "title": "Check your chain ==today==.",
+        "subtitle": "gitcheck.tech\n\ngithub.com/Mike-Demo/gitcheck.tech",
+        "foot": "GitCheck · open-source license compatibility scanning"
+      },
+      "background": {
+        "type": "gradient",
+        "from": "#0a0d16",
+        "to": "#16102a",
+        "angle": 160
+      },
+      "animation": "cascade",
+      "transition": "zoom",
+      "nav": null,
+      "notes": "Close with the ask: scan your own repo today, and star the repo if it catches something.",
+      "status": "none"
+    }
+  ]
+}
